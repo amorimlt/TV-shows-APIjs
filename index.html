@@ -14,26 +14,36 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app">
-      <div id="bar">
-        <h1>📺 Busca de filmes e séries </h1>
+    <div class="header-container">
+      <div id="bar" class="header">
+        <h1>Busca de filmes e séries</h1>
         <form id="search-form">
           <input
             type="text"
             id="query"
             name="query"
-            placeholder="Digite um nome de TV Show"
+            placeholder="Digite TV Show"
           />
           <button>search</button>
         </form>
       </div>
-      <div id="results">
-        <p id="message"></p>
-        <ul id="shows"></ul>
+    </div>
+    <div class="container">
+      <div id="app" class="content">
+        <div id="results" class="results">
+          <p id="message" class="message"></p>
+          <ul id="shows" class="shows"></ul>
+        </div>
+        <p class="credit">by Juliane Amorim</p>
       </div>
-      <p> by Juliane Amorim  </p>
     </div>
     <script src="index.js"></script>
   </body>
